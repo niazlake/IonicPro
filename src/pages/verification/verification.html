@@ -7,12 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>verification</ion-title>
+    <ion-title>Подтверждение</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
+    <img src="../assets/imgs/img1.jpg"/>
+    <ion-card-content>
+      <!--<h3 text-center>Beautify</h3>-->
+    </ion-card-content>
+  </ion-card>
 
+  <ion-list inset>
+    <ion-item>
+      <ion-label stacked>Код подтверждения:</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button full color="light" (click)="presentLoading()">Проверить</button>
+  </ion-list>
 </ion-content>

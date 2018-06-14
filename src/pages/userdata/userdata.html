@@ -5,14 +5,62 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>userdata</ion-title>
-  </ion-navbar>
-
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only color="dark">
+        <ion-icon name="ios-arrow-dropleft-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Аккаунт</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="dark">
+        <ion-icon name="ios-checkmark-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar>
+        <ion-icon name="heart" ></ion-icon>
+      </ion-avatar>
+    </ion-item>
+
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label stacked>Фамилия Имя</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Номер телефона</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Пол</ion-label>
+        <ion-select [(ngModel)]="gender">
+          <ion-option value="nes">Male</ion-option>
+          <ion-option value="n64">Female</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <!--<ion-item>-->
+        <!--<ion-label stacked>Дата рождения</ion-label>-->
+        <!--<ion-datetime displayFormat="MMM DD YYYY" ></ion-datetime>-->
+      <!--</ion-item>-->
+    </ion-card-content>
+
+
+
+
+  </ion-card>
+
+
 
 </ion-content>

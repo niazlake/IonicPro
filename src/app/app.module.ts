@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import {AuthPage} from "../pages/auth/auth";
+import {VerificationPage} from "../pages/verification/verification";
+import {UserdataPage} from "../pages/userdata/userdata";
 
 @NgModule({
   declarations: [
     MyApp,
-    AuthPage
+    AuthPage,
+    VerificationPage,
+    UserdataPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import {AuthPage} from "../pages/auth/auth";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AuthPage
+    AuthPage,
+    VerificationPage,
+    UserdataPage
   ],
   providers: [
     StatusBar,

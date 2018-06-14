@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {VerificationPage} from "../verification/verification";
+
 
 /**
  * Generated class for the AuthPage page.
@@ -21,5 +23,7 @@ export class AuthPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AuthPage');
   }
-
+  ver(){
+    this.navCtrl.push(VerificationPage);
+  }
 }

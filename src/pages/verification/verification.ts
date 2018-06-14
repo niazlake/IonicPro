@@ -1,5 +1,8 @@
+///<reference path="../userdata/userdata.ts"/>
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
+import {UserdataPage} from "../userdata/userdata";
 
 /**
  * Generated class for the VerificationPage page.
@@ -15,11 +18,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VerificationPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
+  presentLoading() {
+    const loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    setTimeout(() => {
+      this.navCtrl.push(UserdataPage);
+    }, 1000);
+    loader.present();
 
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad VerificationPage');
   }
+
 
 }

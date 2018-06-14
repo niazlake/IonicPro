@@ -4,7 +4,7 @@ import { AuthPage } from './auth';
 
 @NgModule({
   declarations: [
-    AuthPage,
+    AuthPage
   ],
   imports: [
     IonicPageModule.forChild(AuthPage),
