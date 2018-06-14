@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import {AuthPage} from "../pages/auth/auth";
 import {VerificationPage} from "../pages/verification/verification";
 import {UserdataPage} from "../pages/userdata/userdata";
+import {MenuPage} from "../pages/menu/menu";
 
 @NgModule({
   declarations: [
     MyApp,
     AuthPage,
     VerificationPage,
-    UserdataPage
+    UserdataPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import {UserdataPage} from "../pages/userdata/userdata";
     MyApp,
     AuthPage,
     VerificationPage,
-    UserdataPage
+    UserdataPage,
+    MenuPage
   ],
   providers: [
     StatusBar,
