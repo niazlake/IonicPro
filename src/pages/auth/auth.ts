@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {VerificationPage} from "../verification/verification";
-
+import { FormBuilder, FormGroup, Validators, AbstractControl} from "@angular/forms";
 
 /**
  * Generated class for the AuthPage page.
@@ -16,8 +16,16 @@ import {VerificationPage} from "../verification/verification";
   templateUrl: 'auth.html',
 })
 export class AuthPage {
+  formgroup: FormGroup;
+  phonenum: AbstractControl;
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              public formbuilder: FormBuilder) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.formgroup = formbuilder.group({
+      phonenum:['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]]
+    });
+    this.phonenum = this.formgroup.controls['phonenum'];
+
   }
 
   ionViewDidLoad() {
