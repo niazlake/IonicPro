@@ -39,41 +39,43 @@
 
     <ion-card-content>
       <form [formGroup] = "formgroup">
-        <ion-item>
-          <ion-label stacked>Фамилия Имя</ion-label>
-          <ion-input type="text" formControlName="name"></ion-input>
-        </ion-item>
-        <ion-item>
-          <p *ngIf="name.hasError('required') && name.touched">
-            Введите имя и фимилию
-          </p>
-        </ion-item>
+        <ion-list inset>
+          <ion-item>
+            <ion-label stacked>Фамилия Имя</ion-label>
+            <ion-input type="text" formControlName="name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <p *ngIf="name.hasError('required') && name.touched">
+              Введите имя и фимилию
+            </p>
+          </ion-item>
 
-        <ion-item>
-          <ion-label stacked>Номер телефона</ion-label>
-          <ion-input type="number" formControlName="phonenum" maxlength="11" ></ion-input>
+          <ion-item>
+            <ion-label stacked>Номер телефона</ion-label>
+            <ion-input type="tel" formControlName="phonenum" maxlength="11" ></ion-input>
 
-        </ion-item>
-        <ion-item>
-          <p *ngIf="phonenum.hasError('required') && phonenum.touched">
-            Введите номер телефона
-          </p>
-          <p *ngIf="phonenum.hasError('maxlength') || phonenum.hasError('minlength')">
-            Неправильно набран номер
-          </p>
-        </ion-item>
-              <ion-item>
-          <ion-label stacked>Пол</ion-label>
-          <ion-select formControlName="gender">
-            <ion-option value="nes">Male</ion-option>
-            <ion-option value="n64">Female</ion-option>
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <p *ngIf="gender.hasError(required)">
-            Выберите пол
-          </p>
-        </ion-item>
+          </ion-item>
+          <ion-item>
+            <p *ngIf="phonenum.hasError('required') && phonenum.touched">
+              Введите номер телефона
+            </p>
+            <p *ngIf="phonenum.hasError('maxlength') || phonenum.hasError('minlength')">
+              Неправильно набран номер
+            </p>
+          </ion-item>
+                <ion-item>
+            <ion-label stacked>Пол</ion-label>
+            <ion-select formControlName="gender">
+              <ion-option value="nes">Male</ion-option>
+              <ion-option value="n64">Female</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <p *ngIf="gender.hasError(required)">
+              Выберите пол
+            </p>
+          </ion-item>
+        </ion-list>
       </form>
 
       <!--<ion-item>-->

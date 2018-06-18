@@ -6,13 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>menu</ion-title>
-  </ion-navbar>
-
+  <!--<ion-navbar>-->
+    <!--<ion-title>menu</ion-title>-->
+  <!--</ion-navbar>-->
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-tabs [selectedIndex]="1">
+    <ion-tab [root]="FindRoot" tabIcon="ios-search-outline" tabTitle="Найти"></ion-tab>
+    <ion-tab [root]="MainRoot" tabIcon="ios-contact" tabTitle="Главная"></ion-tab>
+    <ion-tab [root]="FavoritesRoot" tabIcon="ios-star-outline" tabTitle="Избранное"></ion-tab>
+  </ion-tabs>
 </ion-content>

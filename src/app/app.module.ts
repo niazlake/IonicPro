@@ -9,6 +9,9 @@ import {AuthPage} from "../pages/auth/auth";
 import {VerificationPage} from "../pages/verification/verification";
 import {UserdataPage} from "../pages/userdata/userdata";
 import {MenuPage} from "../pages/menu/menu";
+import {FindPage} from "../pages/find/find";
+import {MainPage} from "../pages/main/main";
+import {FavoritesPage} from "../pages/favorites/favorites";
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {MenuPage} from "../pages/menu/menu";
     AuthPage,
     VerificationPage,
     UserdataPage,
-    MenuPage
+    MenuPage,
+    FindPage,
+    MainPage,
+    FavoritesPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,10 @@ import {MenuPage} from "../pages/menu/menu";
     AuthPage,
     VerificationPage,
     UserdataPage,
-    MenuPage
+    MenuPage,
+    FindPage,
+    MainPage,
+    FavoritesPage
   ],
   providers: [
     StatusBar,
