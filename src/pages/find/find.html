@@ -7,12 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>find</ion-title>
+    <ion-title>Карта</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <div #map id="my-map"></div>
+    <div id="time">10 мин</div>
+    <ion-row>
+      <ion-col col-3>
+        <ion-avatar item-start>
+          <img src="../assets/imgs/avatar.jpg">
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-9>
+        <h5>Имя Фамилия</h5>
+        <p>Мы будем ждать вас через 10 мин, по адресу Абылкайыр хана 45а</p>
+        <p end>Оплата: 2000тг</p>
+      </ion-col>
+    </ion-row>
+    <button ion-button full>Отменить</button>
 </ion-content>
