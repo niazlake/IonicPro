@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
+import {OrderPage} from "../order/order";
 
 /**
  * Generated class for the MainPage page.
@@ -15,9 +16,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
-
+  openModal(characterNum) {
+    const modal = this.modalCtrl.create(OrderPage, characterNum);
+    modal.present();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
   }

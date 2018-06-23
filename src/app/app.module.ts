@@ -12,6 +12,7 @@ import {MenuPage} from "../pages/menu/menu";
 import {FindPage} from "../pages/find/find";
 import {MainPage} from "../pages/main/main";
 import {FavoritesPage} from "../pages/favorites/favorites";
+import {OrderPage} from "../pages/order/order";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {FavoritesPage} from "../pages/favorites/favorites";
     MenuPage,
     FindPage,
     MainPage,
-    FavoritesPage
+    FavoritesPage,
+    OrderPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import {FavoritesPage} from "../pages/favorites/favorites";
     MenuPage,
     FindPage,
     MainPage,
-    FavoritesPage
+    FavoritesPage,
+    OrderPage
   ],
   providers: [
     StatusBar,

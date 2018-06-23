@@ -15,7 +15,6 @@ declare var google:any;
   templateUrl: 'find.html',
 })
 export class FindPage {
-  Ordered:any = 'Yes';
   @ViewChild('map') mapRef:ElementRef;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -31,3 +30,4 @@ export class FindPage {
     const map = new google.maps.Map(this.mapRef.nativeElement, options);
   }
 }
+
