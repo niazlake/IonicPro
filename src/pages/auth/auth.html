@@ -26,14 +26,12 @@
         <ion-label stacked>Телефон: </ion-label>
         <ion-input type="number" value="" formControlName="phonenum" maxlength="11"></ion-input>
       </ion-item>
-      <ion-item>
         <p *ngIf="phonenum.hasError('required') && phonenum.touched">
           Введите номер телефона
         </p>
         <p *ngIf="phonenum.hasError('minlength') || phonenum.hasError('maxlength')">
           Неправильно набран номер
         </p>
-      </ion-item>
       <br>
       <button ion-button full color="light" (click)="ver()">Войти</button>
     </ion-list>

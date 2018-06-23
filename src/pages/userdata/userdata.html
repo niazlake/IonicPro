@@ -30,13 +30,6 @@
       </ion-avatar>
     </ion-item>
 
-
-    <!--<div class = "split-pane">-->
-    <!--<div id = "imgwrap">-->
-      <!--<img src="http://via.placeholder.com/150x150">-->
-    <!--</div>-->
-    <!--</div>-->
-
     <ion-card-content>
       <form [formGroup] = "formgroup">
         <ion-list inset>
@@ -44,37 +37,32 @@
             <ion-label stacked>Фамилия Имя</ion-label>
             <ion-input type="text" formControlName="name"></ion-input>
           </ion-item>
-          <ion-item>
+
             <p *ngIf="name.hasError('required') && name.touched">
               Введите имя и фимилию
             </p>
-          </ion-item>
 
           <ion-item>
             <ion-label stacked>Номер телефона</ion-label>
             <ion-input type="tel" formControlName="phonenum" maxlength="11" ></ion-input>
 
           </ion-item>
-          <ion-item>
             <p *ngIf="phonenum.hasError('required') && phonenum.touched">
               Введите номер телефона
             </p>
             <p *ngIf="phonenum.hasError('maxlength') || phonenum.hasError('minlength')">
               Неправильно набран номер
             </p>
-          </ion-item>
-                <ion-item>
+          <ion-item>
             <ion-label stacked>Пол</ion-label>
             <ion-select formControlName="gender">
-              <ion-option value="nes">Male</ion-option>
-              <ion-option value="n64">Female</ion-option>
+              <ion-option value="m">Male</ion-option>
+              <ion-option value="f">Female</ion-option>
             </ion-select>
           </ion-item>
-          <ion-item>
             <p *ngIf="gender.hasError(required)">
               Выберите пол
             </p>
-          </ion-item>
         </ion-list>
       </form>
 
