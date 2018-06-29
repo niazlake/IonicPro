@@ -14,7 +14,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'favorites.html',
 })
 export class FavoritesPage {
-
+  salons = [
+    {
+      img: '../assets/imgs/Beautify-Salon.png',
+      name: 'Название Салона',
+      adress: 'Адрес',
+      price: '2000 тг',
+      service: 'Макияж',
+      time: '1 час'
+    },
+    {
+      img: '../assets/imgs/salon.png',
+      name: 'Название Салона',
+      adress: 'Адрес',
+      price: '1000 тг',
+      service: 'Укладка',
+      time: '2 часа'
+    },
+  ];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

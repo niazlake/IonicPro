@@ -14,14 +14,14 @@
 
 
 <ion-content padding>
-  <ion-row>
+  <ion-row *ngFor="let salon of salons">
     <ion-col col-4>
-      <img src="../assets/imgs/Beautify-Salon.png"/>
+      <img src="{{salon.img}}"/>
     </ion-col>
     <ion-col col-8>
       <ion-row>
         <ion-col col-10>
-          <h5>Название Салона</h5>
+          <h5>{{salon.name}}</h5>
         </ion-col>
         <ion-col col-2>
           <ion-icon name="ios-navigate-outline" item-end></ion-icon>
@@ -30,55 +30,22 @@
 
       <ion-row>
         <ion-col col-8>
-          Адрес
+          {{salon.adress}}
         </ion-col>
         <ion-col col-4>
-          <ion-note>2000 тг</ion-note>
+          <ion-note>{{salon.price}}</ion-note>
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col col-8>
-          <ion-note>Макияж</ion-note>
+          <ion-note>{{salon.service}}</ion-note>
         </ion-col>
         <ion-col col-4>
-          <ion-note>1 час</ion-note>
+          <ion-note>{{salon.time}}</ion-note>
         </ion-col>
       </ion-row>
     </ion-col>
+    <hr>
   </ion-row>
-  <hr>
-  <ion-row>
-    <ion-col col-4>
-      <img src="../assets/imgs/salon.png"/>
-    </ion-col>
-    <ion-col col-8>
-      <ion-row>
-        <ion-col col-10>
-          <h5>Название Салона</h5>
-        </ion-col>
-        <ion-col col-2>
-          <ion-icon name="ios-navigate-outline" item-end></ion-icon>
-        </ion-col>
-      </ion-row>
-        <ion-row>
-          <ion-col col-8>
-            Адрес
-          </ion-col>
-          <ion-col col-4>
-            <ion-note>1000 тг</ion-note>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col col-8>
-            <ion-note>Укладка</ion-note>
-          </ion-col>
-          <ion-col col-4>
-            <ion-note>2 часа</ion-note>
-          </ion-col>
-        </ion-row>
-
-    </ion-col>
-  </ion-row>
-  <hr>
-</ion-content>
+ </ion-content>
