@@ -28,27 +28,19 @@
     </calendar>
   </div>
   <div>
-    <button ion-button color="light" outline name="button1">10:00</button>
-    <button ion-button color="danger" outline name="button1">11:15</button>
-    <button ion-button color="danger" outline name="button1">14:30</button>
-    <button ion-button color="danger" name="button1">15:10</button>
-    <button ion-button color="danger" outline name="button1">16:15</button>
+    <button ion-button color="light" outline>10:00</button>
+    <button ion-button color="danger" outline>11:15</button>
+    <button ion-button color="danger" outline>14:30</button>
+    <button ion-button color="danger">15:10</button>
+    <button ion-button color="danger" outline>16:15</button>
   </div>
   <br>
   <div>
     <h6>Свободные мастера</h6>
-    <ion-item>
-      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
-      <p>Алина</p>
-      <ion-icon name="ios-heart" color="danger" item-end></ion-icon>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
-      <p>Настя</p>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
-      <p>Катя</p>
+    <ion-item *ngFor="let master of masters">
+      <ion-avatar item-start><img src="{{master.avatar}}"></ion-avatar>
+      <p>{{master.name}}</p>
+      <!--<ion-icon name="ios-heart" color="danger" item-end></ion-icon>-->
     </ion-item>
   </div>
 </ion-content>

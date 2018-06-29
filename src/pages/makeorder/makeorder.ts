@@ -21,9 +21,14 @@ export class MakeorderPage {
   calendar = {
     mode: 'month',
     currentDate: this.selectedDay
-
   }
+  masters = [
+    {name: "Алина", avatar: "../assets/imgs/mona_lisa.jpg"},
+    {name: "Настя", avatar: "../assets/imgs/mona_lisa.jpg"},
+    {name: "Катя", avatar: "../assets/imgs/mona_lisa.jpg"}
+  ];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
