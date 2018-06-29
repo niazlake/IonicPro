@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
 import {OrderPage} from "../order/order";
+import {MakeorderPage} from "../makeorder/makeorder";
 
 /**
  * Generated class for the MainPage page.
@@ -25,5 +26,7 @@ export class MainPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
   }
-
+  makeOrder(){
+    this.navCtrl.push(MakeorderPage);
+  }
 }

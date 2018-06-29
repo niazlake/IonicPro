@@ -13,6 +13,8 @@ import {FindPage} from "../pages/find/find";
 import {MainPage} from "../pages/main/main";
 import {FavoritesPage} from "../pages/favorites/favorites";
 import {OrderPage} from "../pages/order/order";
+import {MakeorderPage} from "../pages/makeorder/makeorder";
+import {NgCalendarModule} from "ionic2-calendar";
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import {OrderPage} from "../pages/order/order";
     FindPage,
     MainPage,
     FavoritesPage,
-    OrderPage
+    OrderPage,
+    MakeorderPage
   ],
   imports: [
+    NgCalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -40,7 +44,8 @@ import {OrderPage} from "../pages/order/order";
     FindPage,
     MainPage,
     FavoritesPage,
-    OrderPage
+    OrderPage,
+    MakeorderPage
   ],
   providers: [
     StatusBar,

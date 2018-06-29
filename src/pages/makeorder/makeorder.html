@@ -1,0 +1,54 @@
+<!--
+  Generated template for the MakeorderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-item>
+      <ion-icon name="md-calendar" item-start></ion-icon>
+      <p>{{viewTitle}}</p>
+    </ion-item>
+    <calendar
+      [calendarMode]="calendar.mode"
+      [currentDate]="calendar.currentDate"
+      (onTitleChanged)="onViewTitleChanged($event)"
+      class="calendar"
+    >
+    </calendar>
+  </div>
+  <div>
+    <button ion-button color="light" outline name="button1">10:00</button>
+    <button ion-button color="danger" outline name="button1">11:15</button>
+    <button ion-button color="danger" outline name="button1">14:30</button>
+    <button ion-button color="danger" name="button1">15:10</button>
+    <button ion-button color="danger" outline name="button1">16:15</button>
+  </div>
+  <br>
+  <div>
+    <h6>Свободные мастера</h6>
+    <ion-item>
+      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
+      <p>Алина</p>
+      <ion-icon name="ios-heart" color="danger" item-end></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
+      <p>Настя</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start><img src="../assets/imgs/mona_lisa.jpg"></ion-avatar>
+      <p>Катя</p>
+    </ion-item>
+  </div>
+</ion-content>
