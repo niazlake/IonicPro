@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {months} from "moment";
+import {VerificationPage} from "../verification/verification";
+import {MainPage} from "../main/main";
 
 /**
  * Generated class for the MakeorderPage page.
@@ -20,7 +22,8 @@ export class MakeorderPage {
 
   calendar = {
     mode: 'month',
-    currentDate: this.selectedDay
+    currentDate: this.selectedDay,
+
   }
   masters = [
     {name: "Алина", avatar: "../assets/imgs/mona_lisa.jpg"},

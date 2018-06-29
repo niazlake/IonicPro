@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {IonicPage, NavParams, Platform, ViewController} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, Platform, ViewController} from 'ionic-angular';
 import {MainPage} from "../main/main";
+import {MakeorderPage} from "../makeorder/makeorder";
 
 /**
  * Generated class for the OrderPage page.
@@ -16,7 +17,7 @@ import {MainPage} from "../main/main";
 })
 export class OrderPage {
   salon;
-  constructor(public navParams: NavParams, public platform: Platform, public viewCtrl: ViewController) {
+  constructor(public navParams: NavParams, public platform: Platform, public viewCtrl: ViewController, public navCtrl: NavController) {
     var charNum = navParams.get('charNum');
     var salons = [
       {
@@ -62,5 +63,7 @@ export class OrderPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderPage');
   }
-
+  makeOrder(){
+    this.navCtrl.push(MakeorderPage);
+  }
 }

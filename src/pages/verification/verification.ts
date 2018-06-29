@@ -34,6 +34,4 @@ export class VerificationPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad VerificationPage');
   }
-
-
 }
