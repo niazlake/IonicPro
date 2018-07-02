@@ -16,6 +16,7 @@ declare var google:any;
 })
 export class FindPage {
   @ViewChild('map') mapRef:ElementRef;
+  ordered: boolean = true;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {

@@ -35,10 +35,4 @@ export class MakeorderPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MakeorderPage');
   }
-  onViewTitleChanged(title){
-    this.viewTitle = title;
-  }
-  selectTime(){
-
-  }
 }
