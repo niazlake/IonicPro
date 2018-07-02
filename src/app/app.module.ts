@@ -14,7 +14,7 @@ import {MainPage} from "../pages/main/main";
 import {FavoritesPage} from "../pages/favorites/favorites";
 import {OrderPage} from "../pages/order/order";
 import {MakeorderPage} from "../pages/makeorder/makeorder";
-import {NgCalendarModule} from "ionic2-calendar";
+import { CalendarModule } from "ion2-calendar";
 
 @NgModule({
   declarations: [
@@ -30,8 +30,8 @@ import {NgCalendarModule} from "ionic2-calendar";
     MakeorderPage
   ],
   imports: [
-    NgCalendarModule,
     BrowserModule,
+    CalendarModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {months} from "moment";
-import {VerificationPage} from "../verification/verification";
-import {MainPage} from "../main/main";
+import { CalendarComponentOptions } from 'ion2-calendar';
 
 /**
  * Generated class for the MakeorderPage page.
@@ -17,18 +15,18 @@ import {MainPage} from "../main/main";
   templateUrl: 'makeorder.html',
 })
 export class MakeorderPage {
-  viewTitle: string;
-  selectedDay = new Date();
+  dateMulti: string[];
+  type: 'string';
+  options: CalendarComponentOptions = {
 
-  calendar = {
-    mode: 'month',
-    currentDate: this.selectedDay,
+    pickMode: 'single',
 
-  }
+  };
+
   masters = [
-    {name: "Алина", avatar: "../assets/imgs/mona_lisa.jpg"},
-    {name: "Настя", avatar: "../assets/imgs/mona_lisa.jpg"},
-    {name: "Катя", avatar: "../assets/imgs/mona_lisa.jpg"}
+    {name: "Алина", avatar: "../assets/imgs/mona_lisa.jpg", favourite: true},
+    {name: "Настя", avatar: "../assets/imgs/mona_lisa.jpg", favourite: false},
+    {name: "Катя", avatar: "../assets/imgs/mona_lisa.jpg", favourite: false}
   ];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 

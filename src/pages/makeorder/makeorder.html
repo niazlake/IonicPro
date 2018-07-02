@@ -17,17 +17,14 @@
   <div>
     <ion-item>
       <ion-icon name="md-calendar" item-start></ion-icon>
-      <p>{{viewTitle}}</p>
+      <p></p>
     </ion-item>
-    <calendar
-      [calendarMode]="calendar.mode"
-      [currentDate]="calendar.currentDate"
-      [showEventDetail]="false"
-      (onTitleChanged)="onViewTitleChanged($event)"
-      class="calendar"
 
-    >
-    </calendar>
+    <ion-calendar [(ngModel)]="dateMulti"
+                  [options]="options"
+                  [type]="type"
+                  [format]="'YYYY-MM-DD'">
+    </ion-calendar>
   </div>
   <br>
   <div>
@@ -43,6 +40,7 @@
     <ion-item *ngFor="let master of masters">
       <ion-avatar item-start><img src="{{master.avatar}}"></ion-avatar>
       <p>{{master.name}}</p>
+      <ion-icon name="md-heart" item-end color="danger" *ngIf="master.favourite"></ion-icon>
     </ion-item>
   </div>
 </ion-content>
