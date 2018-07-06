@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
 import {VerificationPage} from "../verification/verification";
 import { FormBuilder, FormGroup, Validators, AbstractControl} from "@angular/forms";
+import {UserdataPage} from "../userdata/userdata";
 
 /**
  * Generated class for the AuthPage page.
@@ -19,7 +20,7 @@ export class AuthPage {
   formgroup: FormGroup;
   phonenum: AbstractControl;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-              public formbuilder: FormBuilder) {
+              public formbuilder: FormBuilder, public loadingCtrl: LoadingController) {
 
     this.formgroup = formbuilder.group({
       phonenum:['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]]
@@ -27,8 +28,17 @@ export class AuthPage {
     this.phonenum = this.formgroup.controls['phonenum'];
 
   }
+  presentLoading() {
+    const loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    setTimeout(() => {}, 1000);
+    loader.present();
 
+  }
   ionViewDidLoad() {
+    this.presentLoading();
     console.log('ionViewDidLoad AuthPage');
   }
   ver(){
