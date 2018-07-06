@@ -14,6 +14,10 @@
 
 
 <ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
   <p style="text-align: center;">Недавно посещенные салоны</p>
   <ion-row *ngFor="let salon of salons">
     <ion-col col-4>

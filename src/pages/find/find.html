@@ -14,6 +14,10 @@
 
 
 <ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
   <p text-center></p>
         <!--<div #ordered id="ordered" *ngIf="ordered">-->
           <div #map id="my-map"></div>

@@ -29,4 +29,10 @@ export class MainPage {
   makeOrder(){
     this.navCtrl.push(MakeorderPage);
   }
+  doRefresh(refresher){
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete();
+    }, 2000);
+  }
 }
