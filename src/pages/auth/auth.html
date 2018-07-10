@@ -6,20 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Аутентификация</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card>
-    <img src="../assets/imgs/img1.jpg"/>
-    <ion-card-content>
-      <!--<h3 text-center>Beautify</h3>-->
-    </ion-card-content>
-  </ion-card>
+    <img id="logo" src="../assets/imgs/suluwith.svg"/>
   <form [formGroup] = "formgroup">
     <ion-list inset>
       <ion-item>
@@ -33,7 +24,7 @@
           Неправильно набран номер
         </p>
       <br>
-      <button ion-button full color="light" (click)="ver()">Войти</button>
+      <button ion-button block color="sulu" (click)="ver()">Войти</button>
     </ion-list>
   </form>
 </ion-content>
