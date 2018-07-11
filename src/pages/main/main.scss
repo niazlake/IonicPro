@@ -6,8 +6,25 @@ page-main {
   #avatar{
     border-radius: 50%;
     background-color: #D8D8D8;
+    background-image: url("../../assets/imgs/girl.png") ;
+    background-size: cover;
+    height: 90px;
+    width: auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
   ion-card{
     border-radius: 15%;
+  }
+  #salon{
+    background-image: url("../../assets/imgs/lotus_flower_1x.jpg") ;
+    background-size: cover;
+    height: 140px;
+    width: auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

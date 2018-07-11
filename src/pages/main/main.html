@@ -16,7 +16,9 @@
 
   <ion-row>
     <ion-col col-4>
-      <img src="../assets/imgs/girl.png" id="avatar"/>
+      <div id="avatar">
+      </div>
+      <!--<img src="../assets/imgs/girl.png" id="avatar"/>-->
     </ion-col>
     <ion-col col-8>
       <h5>Имя Фамилия</h5>
@@ -36,7 +38,8 @@
         <!--</ion-card-header>-->
         <hr>
         <ion-card-content>
-          <img src="../assets/imgs/beautify_script.png"/>
+          <div id="salon"></div>
+          <!--<img src="../assets/imgs/beautify_script.png"/>-->
           <ion-card-title>
             Услуги салона
           </ion-card-title>
@@ -47,7 +50,7 @@
         </ion-card-content>
       </a>
       <hr>
-      <button ion-button clear full (click)="makeOrder()">Записаться</button>
+      <button ion-button clear full (click)="makeOrder()" color="sulu">Записаться</button>
     </ion-card>
   </ion-row>
 </ion-content>

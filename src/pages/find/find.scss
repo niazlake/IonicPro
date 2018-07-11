@@ -1,18 +1,42 @@
 page-find {
-  #my-map{
-
-  }
+  //#my-map{
+  //
+  //}
   #time{
-    background-color: #007aff;
-    width: 13%  ;
+    background-color: #D05197;
+    padding-top: 2%;
+    width: 14%;
     margin-left: 70%;
     position: absolute;
     text-align: center;
     transform: translate(0%, -50%);
-    height: 8%;
+    height: 9%;
+    color: white;
+    border-radius: 5px;
   }
   //#new-map{
   //  height: 100%;
   //}
-
+  #map{
+    background-image: url("../../assets/imgs/city-map-imaginary-sea-route-point-to-b-vector-illustration-115026261.jpg") ;
+    background-size: cover;
+    height: 200px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #btn{
+    margin-top: 40px;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  #girl{
+    background-image: url("../../assets/imgs/girl.png") ;
+    background-size: cover;
+    height: 83px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
 }

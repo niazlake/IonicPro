@@ -21,23 +21,26 @@
   </ion-refresher>
   <p text-center></p>
         <!--<div #ordered id="ordered" *ngIf="ordered">-->
-          <div #map id="my-map">
-            <img src="../assets/imgs/city-map-imaginary-sea-route-point-to-b-vector-illustration-115026261.jpg">
-          </div>
-          <div id="time">10 мин</div>
+          <!--<div #map id="my-map">-->
+            <!--<img src="../assets/imgs/city-map-imaginary-sea-route-point-to-b-vector-illustration-115026261.jpg">-->
+          <!--</div>-->
+          <div id="map"></div>
+  <div id="time">10<br>min</div>
           <ion-row>
-            <ion-col col-3>
+            <ion-col col-3 margin-top="20px">
               <ion-avatar item-start>
-                <img src="../assets/imgs/girl.png">
+                <!--<img src="../assets/imgs/girl.png">-->
+                <div id="girl">
+                </div>
               </ion-avatar>
             </ion-col>
-            <ion-col col-9>
-              <h5>Имя Фамилия</h5>
+            <ion-col col-9 margin-top="20px">
+              <h5>Jack</h5>
               <p>Мы будем ждать вас через 10 мин, по адресу Абылкайыр хана 45а</p>
-              <p end>Оплата: 2000тг</p>
+              <p align="right">Оплата: 2000тг</p>
             </ion-col>
           </ion-row>
-          <button ion-button full>Отменить</button>
+          <button ion-button block round color="text" id="btn">Отмена заказа</button>
         <!--</div>-->
         <!--<div *ngIf="!ordered">-->
           <!--<div #map id="new-map"></div>-->

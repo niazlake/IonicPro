@@ -5,11 +5,16 @@ page-verification {
     background-color: white;
   }
   #logo{
+    background-image: url("../../assets/imgs/suluwith.svg") ;
+    background-size: cover;
+    height: 220px;
+    width: 220px;
     margin-top: 16%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   ion-input{
     font-size: 0.75em;
