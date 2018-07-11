@@ -1,3 +1,13 @@
 page-main {
-
+  #content{
+    background: url("../../assets/imgs/back2.png") white top right no-repeat;
+    background-size: 37%;
+  }
+  #avatar{
+    border-radius: 50%;
+    background-color: #D8D8D8;
+  }
+  ion-card{
+    border-radius: 15%;
+  }
 }

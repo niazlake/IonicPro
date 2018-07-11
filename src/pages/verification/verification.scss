@@ -1,9 +1,28 @@
 page-verification {
+  .content{
+    background: url("../../assets/imgs/Vector.png") top right no-repeat;
+    background-size: 76%;
+    background-color: white;
+  }
   #logo{
-    margin-top: 13%;
+    margin-top: 16%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+  }
+  ion-input{
+    font-size: 0.75em;
+  }
+  #btn{
+    border-radius: 6px;
+  }
+  #input{
+    margin-top: 26%;
+  }
+  .item.item-input{
+    background-color: transparent;
+    border-bottom: 1px solid #797979;
+    color: #797979;
   }
 }

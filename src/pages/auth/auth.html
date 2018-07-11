@@ -9,22 +9,16 @@
 </ion-header>
 
 
-<ion-content padding>
-    <img id="logo" src="../assets/imgs/suluwith.svg"/>
+<ion-content padding class="content">
+  <img id="logo" src="../assets/imgs/suluwith.svg"/>
   <form [formGroup] = "formgroup">
     <ion-list inset>
       <ion-item>
-        <ion-label stacked>Телефон: </ion-label>
-        <ion-input type="number" value="" formControlName="phonenum" maxlength="11"></ion-input>
+        <ion-input type="number" value="" formControlName="phonenum" maxlength="11" placeholder="Телефон:" ></ion-input>
       </ion-item>
-        <p *ngIf="phonenum.hasError('required') && phonenum.touched">
-          Введите номер телефона
-        </p>
-        <p *ngIf="phonenum.hasError('minlength') || phonenum.hasError('maxlength')">
-          Неправильно набран номер
-        </p>
       <br>
-      <button ion-button block color="sulu" (click)="ver()">Войти</button>
+
     </ion-list>
+    <button margin-top="15px" id="btn" ion-button block round color="sulu" (click)="ver()">Далее</button>
   </form>
 </ion-content>

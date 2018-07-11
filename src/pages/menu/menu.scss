@@ -1,3 +1,8 @@
 page-menu {
-
+  .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+    color: #D05197;
+  }
+  .tabs-md .tab-button[aria-selected=true]{
+    color: #D05197;
+  }
 }

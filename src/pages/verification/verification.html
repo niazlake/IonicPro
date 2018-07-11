@@ -11,14 +11,15 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="content">
   <img id="logo" src="../assets/imgs/suluwith.svg"/>
-  <ion-list inset>
+  <ion-list inset id="input">
     <ion-item>
-      <ion-label stacked>Код подтверждения:</ion-label>
-      <ion-input type="text" value="" maxlength="4"></ion-input>
+      <!--<ion-label stacked>Код подтверждения:</ion-label>-->
+      <ion-input type="text" value="" maxlength="4" placeholder="Код подтверждение:"></ion-input>
     </ion-item>
     <br>
-    <button ion-button block color="sulu" (click)="presentLoading()">Проверить</button>
+
   </ion-list>
+  <button ion-button block round id = "btn" color="sulu" (click)="presentLoading()">Проверить</button>
 </ion-content>

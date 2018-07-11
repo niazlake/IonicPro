@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 import {UserdataPage} from "../userdata/userdata";
+import {MenuPage} from "../menu/menu";
 
 /**
  * Generated class for the VerificationPage page.
@@ -26,7 +27,7 @@ export class VerificationPage {
       duration: 2000
     });
     setTimeout(() => {
-      this.navCtrl.push(UserdataPage);
+      this.navCtrl.push(MenuPage);
     }, 1000);
     loader.present();
 

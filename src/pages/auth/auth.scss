@@ -1,10 +1,35 @@
 page-auth {
+  .content{
+    background: url("../../assets/imgs/Vector.png") top right no-repeat;
+    background-size: 70%;
+    background-color: white;
+  }
   #logo{
-    margin-top: 13%;
+    margin-top: 16%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
-
+  ion-input{
+    font-size: 0.75em;
+  }
+  #btn{
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  form{
+    margin-top: 26%;
+  }
+  .item-inner {
+    background: transparent;
+  }
+  ion-input{
+    background: transparent;
+  }
+  .item.item-input{
+    background-color: transparent;
+    border-bottom: 1px solid #797979;
+    color: #797979;
+  }
 }

@@ -6,32 +6,34 @@
 -->
 
 
-<ion-content padding>
-  <ion-refresher (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content
-      pulling-icon="ion-ios7-arrow-thin-down">
-    </ion-refresher-content>
-  </ion-refresher>
+<ion-content padding id="content">
+
+  <!--<ion-refresher (ionRefresh)="doRefresh($event)">-->
+    <!--<ion-refresher-content-->
+      <!--pulling-icon="ion-ios7-arrow-thin-down">-->
+    <!--</ion-refresher-content>-->
+  <!--</ion-refresher>-->
+
   <ion-row>
     <ion-col col-4>
-      <img src="../assets/imgs/avatar.jpg"/>
+      <img src="../assets/imgs/girl.png" id="avatar"/>
     </ion-col>
     <ion-col col-8>
       <h5>Имя Фамилия</h5>
       <p>+7 (777) 777 77 77</p>
-      <ion-note>Способ оплаты</ion-note>
+      <ion-note>Наличная оплата</ion-note>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-card>
       <a (click)="openModal({charNum: 0})">
-        <ion-card-header>
-          <ion-item>
-            <ion-icon name="ios-cut" item-start></ion-icon>
-            <h2>Имя Салона</h2>
-            <ion-icon name="ios-arrow-forward" item-end small></ion-icon>
-          </ion-item>
-        </ion-card-header>
+        <!--<ion-card-header>-->
+          <!--<ion-item>-->
+            <!--<ion-icon name="ios-cut" item-start></ion-icon>-->
+            <!--<h2>Имя Салона</h2>-->
+            <!--<ion-icon name="ios-arrow-forward" item-end small></ion-icon>-->
+          <!--</ion-item>-->
+        <!--</ion-card-header>-->
         <hr>
         <ion-card-content>
           <img src="../assets/imgs/beautify_script.png"/>
@@ -42,15 +44,10 @@
           <p>Услуга 2 - 2000тг</p>
           <p>Услуга 3 - 3000тг</p>
           <ion-note>+7 (700) 000 0000</ion-note>
-
-
         </ion-card-content>
       </a>
-
       <hr>
-
       <button ion-button clear full (click)="makeOrder()">Записаться</button>
-
     </ion-card>
   </ion-row>
 </ion-content>
