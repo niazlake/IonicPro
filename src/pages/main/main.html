@@ -21,13 +21,14 @@
       <!--<img src="../assets/imgs/girl.png" id="avatar"/>-->
     </ion-col>
     <ion-col col-8>
-      <h5>Имя Фамилия</h5>
-      <p>+7 (777) 777 77 77</p>
-      <ion-note>Наличная оплата</ion-note>
+      <h5 class="top" id="top">Имя Фамилия</h5>
+      <p class="top">+7 (777) 777 77 77</p>
+      <ion-note class="top">Наличная оплата</ion-note>
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-card>
+    <div style="width: 100%"><h4 style="text-align: center;">Салоны</h4></div>
+    <ion-card class = "card">
       <a (click)="openModal({charNum: 0})">
         <!--<ion-card-header>-->
           <!--<ion-item>-->
@@ -36,20 +37,21 @@
             <!--<ion-icon name="ios-arrow-forward" item-end small></ion-icon>-->
           <!--</ion-item>-->
         <!--</ion-card-header>-->
-        <hr>
         <ion-card-content>
           <div id="salon"></div>
           <!--<img src="../assets/imgs/beautify_script.png"/>-->
-          <ion-card-title>
-            Услуги салона
-          </ion-card-title>
+          <ion-item>
+            <div class="salon-icon"></div>
+            <h3><b>Имя салона</b></h3>
+            <ion-icon item-end name="ios-arrow-forward" color="text" small></ion-icon>
+          </ion-item>
           <p>Услуга 1 - 1000тг</p>
           <p>Услуга 2 - 2000тг</p>
           <p>Услуга 3 - 3000тг</p>
           <ion-note>+7 (700) 000 0000</ion-note>
         </ion-card-content>
       </a>
-      <hr>
+      <hr class="order">
       <button ion-button clear full (click)="makeOrder()" color="sulu">Записаться</button>
     </ion-card>
   </ion-row>

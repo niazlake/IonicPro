@@ -18,7 +18,7 @@ export class MakeorderPage {
   dateMulti: string[];
   type: 'string';
   options: CalendarComponentOptions = {
-
+    color: 'primary',
     pickMode: 'single',
 
   };

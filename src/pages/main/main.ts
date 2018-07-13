@@ -20,7 +20,7 @@ export class MainPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
   openModal(characterNum) {
-    const modal = this.modalCtrl.create(OrderPage, characterNum);
+    const modal = this.modalCtrl.create(OrderPage, characterNum, {cssClass: "modal-fullscreen"});
     modal.present();
   }
   ionViewDidLoad() {

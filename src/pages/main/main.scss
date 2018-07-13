@@ -8,15 +8,12 @@ page-main {
     background-color: #D8D8D8;
     background-image: url("../../assets/imgs/girl.png") ;
     background-size: cover;
-    height: 90px;
+    height: 100px;
     width: auto;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
 
-  }
-  ion-card{
-    border-radius: 15%;
   }
   #salon{
     background-image: url("../../assets/imgs/lotus_flower_1x.jpg") ;
@@ -26,5 +23,42 @@ page-main {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .top{
+    margin-top: -8px;
+  }
+  #top{
+    margin-top: 10px;
+  }
+  .order{
+    color:#D05197;
+    background-color: #D05197;
+  }
+  .card{
+    border-radius: 13px;
+  }
+  .item-md, .item-ios, .item-wp{
+    padding-left: 0px;
+  }
+  .salon-icon{
+    background-image: url("../../assets/imgs/girl.png") ;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  .my-modal {
+    left: 0;
+    top: 15%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    contain: strict;
   }
 }

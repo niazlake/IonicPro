@@ -1,8 +1,36 @@
 page-menu {
+  .tabs-ios .tab-button{
+    color: #D05197;
+  }
+  .tabs-md .tab-button{
+    color: #D05197;
+  }
+  .tabs-wp .tab-button{
+    color: #D05197;
+  }
   .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
     color: #D05197;
   }
-  .tabs-md .tab-button[aria-selected=true]{
+  .ion-md-heart-outline:before{
     color: #D05197;
   }
+  .ion-ios-home-outline:before{
+    color: #D05197;
+  }
+  .ion-md-search:before{
+    color: #D05197;
+  }
+  .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+    color: #D05197;
+  }
+  .tabs-ios .tab-button-text{
+    color: #D05197;
+  }
+  .tabs-wp .tab-button-text{
+    color: #D05197;
+  }
+  .tabs-wp .tab-button[aria-selected=true]{
+    border-bottom-color: #D05197;
+}
+
 }
