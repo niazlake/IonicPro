@@ -23,6 +23,7 @@ export class MainPage {
     const modal = this.modalCtrl.create(OrderPage, characterNum, {cssClass: "modal-fullscreen"});
     modal.present();
   }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
   }
