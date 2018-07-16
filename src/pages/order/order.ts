@@ -65,6 +65,6 @@ export class OrderPage {
     console.log('ionViewDidLoad OrderPage');
   }
   makeOrder(){
-    this.navCtrl.push(MakeorderPage);
+    this.navCtrl.push(MakeorderPage, {page: 'OrderPage'});
   }
 }

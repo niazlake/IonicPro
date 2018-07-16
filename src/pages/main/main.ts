@@ -28,7 +28,7 @@ export class MainPage {
     console.log('ionViewDidLoad MainPage');
   }
   makeOrder(){
-    this.navCtrl.push(MakeorderPage);
+    this.navCtrl.push(MakeorderPage, {page : 'MakeorderPage'});
   }
   doRefresh(refresher){
     setTimeout(() => {
